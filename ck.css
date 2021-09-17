@@ -1,0 +1,51 @@
+/**
+CK CSS
+
+Contains a few opinionated styles that I like
+to include in every one of my projects.
+
+NOTE: Ideally, this should be used this with `modern-normalize.css`.
+*/
+
+:root {
+    /* Screen Widths */
+    /* Based on Tailwind 2 Breakpoints: https://tailwindcss.com/docs/breakpoints */
+    --screen-xs: 475px;
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+    --screen-2xl: 1536px;
+}
+
+body {
+    /* This is what `create-react-app` does by default.
+     If it's good enough for them, its good enough for me. */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+Fix Firefox's bad default outline for non-form elements.
+Firefox issue:
+  https://bugzilla.mozilla.org/show_bug.cgi?id=1708244
+Proposed fix for `tailwindcss` and `modern-normalize`:
+  https://github.com/tailwindlabs/tailwindcss/issues/4769#issuecomment-867728491
+*/
+:focus-visible {
+    outline-style: auto;
+}
+
+/* Get the correct aspect ratio for images based on width and height HTML attributes */
+/* https://developer.mozilla.org/en-US/docs/Web/Media/images/aspect_ratio_mapping */
+img, video {
+    /*noinspection CssInvalidPropertyValue*/
+    aspect-ratio: attr(width) / attr(height);
+}
+
+/* Remove the default styling from unordered lists. */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
