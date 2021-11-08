@@ -9,6 +9,7 @@ https://tailwindcss.com/docs/customizing-colors#color-palette-reference
 */
 
 @forward 'color-defs';
+@use 'color-defs';
 
 :root {
   // Rather than using the CSS built-in color names 'black' and 'white',
