@@ -23,6 +23,7 @@
   "author": "Chris Kumm <chrislkumm@protonmail.com> (https://www.chriskumm.com)",
   "license": "CC0-1.0",
   "devDependencies": {
-    "css-minify": "^2.0.0"
+    "css-minify": "^2.0.0",
+    "sass": "^1.43.4"
   }
 }
