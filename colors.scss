@@ -1,0 +1,262 @@
+/* 
+
+Modified from Tailwind CSS v3.0.0-alpha.1 (MIT License):
+https://github.com/tailwindlabs/tailwindcss/blob/v3.0.0-alpha.1/src/public/colors.js
+
+V2 Color Reference (it might differ slightly from this version)
+https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+
+*/
+
+@use 'color-defs';
+
+:root {
+  // Rather than using the CSS built-in color names 'black' and 'white',
+  // you can use var(--black) and var(--white). Then, if you decide later 
+  // you want to use an off-black you can just override this value in your
+  // projects main CSS file.
+  --black: #{color-defs.$black};
+  --white: #{color-defs.$white};
+
+  --slate-50: #{color-defs.$slate-50};
+  --slate-100: #{color-defs.$slate-100};
+  --slate-200: #{color-defs.$slate-200};
+  --slate-300: #{color-defs.$slate-300};
+  --slate-400: #{color-defs.$slate-400};
+  --slate-500: #{color-defs.$slate-500};
+  --slate-600: #{color-defs.$slate-600};
+  --slate-700: #{color-defs.$slate-700};
+  --slate-800: #{color-defs.$slate-800};
+  --slate-900: #{color-defs.$slate-900};
+
+  --gray-50: #{color-defs.$gray-50};
+  --gray-100: #{color-defs.$gray-100};
+  --gray-200: #{color-defs.$gray-200};
+  --gray-300: #{color-defs.$gray-300};
+  --gray-400: #{color-defs.$gray-400};
+  --gray-500: #{color-defs.$gray-500};
+  --gray-600: #{color-defs.$gray-600};
+  --gray-700: #{color-defs.$gray-700};
+  --gray-800: #{color-defs.$gray-800};
+  --gray-900: #{color-defs.$gray-900};
+
+  --zinc-50: #{color-defs.$zinc-50};
+  --zinc-100: #{color-defs.$zinc-100};
+  --zinc-200: #{color-defs.$zinc-200};
+  --zinc-300: #{color-defs.$zinc-300};
+  --zinc-400: #{color-defs.$zinc-400};
+  --zinc-500: #{color-defs.$zinc-500};
+  --zinc-600: #{color-defs.$zinc-600};
+  --zinc-700: #{color-defs.$zinc-700};
+  --zinc-800: #{color-defs.$zinc-800};
+  --zinc-900: #{color-defs.$zinc-900};
+
+  --neutral-50: #{color-defs.$neutral-50};
+  --neutral-100: #{color-defs.$neutral-100};
+  --neutral-200: #{color-defs.$neutral-200};
+  --neutral-300: #{color-defs.$neutral-300};
+  --neutral-400: #{color-defs.$neutral-400};
+  --neutral-500: #{color-defs.$neutral-500};
+  --neutral-600: #{color-defs.$neutral-600};
+  --neutral-700: #{color-defs.$neutral-700};
+  --neutral-800: #{color-defs.$neutral-800};
+  --neutral-900: #{color-defs.$neutral-900};
+
+  --stone-50: #{color-defs.$stone-50};
+  --stone-100: #{color-defs.$stone-100};
+  --stone-200: #{color-defs.$stone-200};
+  --stone-300: #{color-defs.$stone-300};
+  --stone-400: #{color-defs.$stone-400};
+  --stone-500: #{color-defs.$stone-500};
+  --stone-600: #{color-defs.$stone-600};
+  --stone-700: #{color-defs.$stone-700};
+  --stone-800: #{color-defs.$stone-800};
+  --stone-900: #{color-defs.$stone-900};
+
+  --red-50: #{color-defs.$red-50};
+  --red-100: #{color-defs.$red-100};
+  --red-200: #{color-defs.$red-200};
+  --red-300: #{color-defs.$red-300};
+  --red-400: #{color-defs.$red-400};
+  --red-500: #{color-defs.$red-500};
+  --red-600: #{color-defs.$red-600};
+  --red-700: #{color-defs.$red-700};
+  --red-800: #{color-defs.$red-800};
+  --red-900: #{color-defs.$red-900};
+
+  --orange-50: #{color-defs.$orange-50};
+  --orange-100: #{color-defs.$orange-100};
+  --orange-200: #{color-defs.$orange-200};
+  --orange-300: #{color-defs.$orange-300};
+  --orange-400: #{color-defs.$orange-400};
+  --orange-500: #{color-defs.$orange-500};
+  --orange-600: #{color-defs.$orange-600};
+  --orange-700: #{color-defs.$orange-700};
+  --orange-800: #{color-defs.$orange-800};
+  --orange-900: #{color-defs.$orange-900};
+
+  --amber-50: #{color-defs.$amber-50};
+  --amber-100: #{color-defs.$amber-100};
+  --amber-200: #{color-defs.$amber-200};
+  --amber-300: #{color-defs.$amber-300};
+  --amber-400: #{color-defs.$amber-400};
+  --amber-500: #{color-defs.$amber-500};
+  --amber-600: #{color-defs.$amber-600};
+  --amber-700: #{color-defs.$amber-700};
+  --amber-800: #{color-defs.$amber-800};
+  --amber-900: #{color-defs.$amber-900};
+
+  --yellow-50: #{color-defs.$yellow-50};
+  --yellow-100: #{color-defs.$yellow-100};
+  --yellow-200: #{color-defs.$yellow-200};
+  --yellow-300: #{color-defs.$yellow-300};
+  --yellow-400: #{color-defs.$yellow-400};
+  --yellow-500: #{color-defs.$yellow-500};
+  --yellow-600: #{color-defs.$yellow-600};
+  --yellow-700: #{color-defs.$yellow-700};
+  --yellow-800: #{color-defs.$yellow-800};
+  --yellow-900: #{color-defs.$yellow-900};
+
+  --lime-50: #{color-defs.$lime-50};
+  --lime-100: #{color-defs.$lime-100};
+  --lime-200: #{color-defs.$lime-200};
+  --lime-300: #{color-defs.$lime-300};
+  --lime-400: #{color-defs.$lime-400};
+  --lime-500: #{color-defs.$lime-500};
+  --lime-600: #{color-defs.$lime-600};
+  --lime-700: #{color-defs.$lime-700};
+  --lime-800: #{color-defs.$lime-800};
+  --lime-900: #{color-defs.$lime-900};
+
+  --green-50: #{color-defs.$green-50};
+  --green-100: #{color-defs.$green-100};
+  --green-200: #{color-defs.$green-200};
+  --green-300: #{color-defs.$green-300};
+  --green-400: #{color-defs.$green-400};
+  --green-500: #{color-defs.$green-500};
+  --green-600: #{color-defs.$green-600};
+  --green-700: #{color-defs.$green-700};
+  --green-800: #{color-defs.$green-800};
+  --green-900: #{color-defs.$green-900};
+
+  --emerald-50: #{color-defs.$emerald-50};
+  --emerald-100: #{color-defs.$emerald-100};
+  --emerald-200: #{color-defs.$emerald-200};
+  --emerald-300: #{color-defs.$emerald-300};
+  --emerald-400: #{color-defs.$emerald-400};
+  --emerald-500: #{color-defs.$emerald-500};
+  --emerald-600: #{color-defs.$emerald-600};
+  --emerald-700: #{color-defs.$emerald-700};
+  --emerald-800: #{color-defs.$emerald-800};
+  --emerald-900: #{color-defs.$emerald-900};
+
+  --teal-50: #{color-defs.$teal-50};
+  --teal-100: #{color-defs.$teal-100};
+  --teal-200: #{color-defs.$teal-200};
+  --teal-300: #{color-defs.$teal-300};
+  --teal-400: #{color-defs.$teal-400};
+  --teal-500: #{color-defs.$teal-500};
+  --teal-600: #{color-defs.$teal-600};
+  --teal-700: #{color-defs.$teal-700};
+  --teal-800: #{color-defs.$teal-800};
+  --teal-900: #{color-defs.$teal-900};
+
+  --cyan-50: #{color-defs.$cyan-50};
+  --cyan-100: #{color-defs.$cyan-100};
+  --cyan-200: #{color-defs.$cyan-200};
+  --cyan-300: #{color-defs.$cyan-300};
+  --cyan-400: #{color-defs.$cyan-400};
+  --cyan-500: #{color-defs.$cyan-500};
+  --cyan-600: #{color-defs.$cyan-600};
+  --cyan-700: #{color-defs.$cyan-700};
+  --cyan-800: #{color-defs.$cyan-800};
+  --cyan-900: #{color-defs.$cyan-900};
+
+  --sky-50: #{color-defs.$sky-50};
+  --sky-100: #{color-defs.$sky-100};
+  --sky-200: #{color-defs.$sky-200};
+  --sky-300: #{color-defs.$sky-300};
+  --sky-400: #{color-defs.$sky-400};
+  --sky-500: #{color-defs.$sky-500};
+  --sky-600: #{color-defs.$sky-600};
+  --sky-700: #{color-defs.$sky-700};
+  --sky-800: #{color-defs.$sky-800};
+  --sky-900: #{color-defs.$sky-900};
+
+  --blue-50: #{color-defs.$blue-50};
+  --blue-100: #{color-defs.$blue-100};
+  --blue-200: #{color-defs.$blue-200};
+  --blue-300: #{color-defs.$blue-300};
+  --blue-400: #{color-defs.$blue-400};
+  --blue-500: #{color-defs.$blue-500};
+  --blue-600: #{color-defs.$blue-600};
+  --blue-700: #{color-defs.$blue-700};
+  --blue-800: #{color-defs.$blue-800};
+  --blue-900: #{color-defs.$blue-900};
+
+  --indigo-50: #{color-defs.$indigo-50};
+  --indigo-100: #{color-defs.$indigo-100};
+  --indigo-200: #{color-defs.$indigo-200};
+  --indigo-300: #{color-defs.$indigo-300};
+  --indigo-400: #{color-defs.$indigo-400};
+  --indigo-500: #{color-defs.$indigo-500};
+  --indigo-600: #{color-defs.$indigo-600};
+  --indigo-700: #{color-defs.$indigo-700};
+  --indigo-800: #{color-defs.$indigo-800};
+  --indigo-900: #{color-defs.$indigo-900};
+
+  --violet-50: #{color-defs.$violet-50};
+  --violet-100: #{color-defs.$violet-100};
+  --violet-200: #{color-defs.$violet-200};
+  --violet-300: #{color-defs.$violet-300};
+  --violet-400: #{color-defs.$violet-400};
+  --violet-500: #{color-defs.$violet-500};
+  --violet-600: #{color-defs.$violet-600};
+  --violet-700: #{color-defs.$violet-700};
+  --violet-800: #{color-defs.$violet-800};
+  --violet-900: #{color-defs.$violet-900};
+
+  --purple-50: #{color-defs.$purple-50};
+  --purple-100: #{color-defs.$purple-100};
+  --purple-200: #{color-defs.$purple-200};
+  --purple-300: #{color-defs.$purple-300};
+  --purple-400: #{color-defs.$purple-400};
+  --purple-500: #{color-defs.$purple-500};
+  --purple-600: #{color-defs.$purple-600};
+  --purple-700: #{color-defs.$purple-700};
+  --purple-800: #{color-defs.$purple-800};
+  --purple-900: #{color-defs.$purple-900};
+
+  --fuchsia-50: #{color-defs.$fuchsia-50};
+  --fuchsia-100: #{color-defs.$fuchsia-100};
+  --fuchsia-200: #{color-defs.$fuchsia-200};
+  --fuchsia-300: #{color-defs.$fuchsia-300};
+  --fuchsia-400: #{color-defs.$fuchsia-400};
+  --fuchsia-500: #{color-defs.$fuchsia-500};
+  --fuchsia-600: #{color-defs.$fuchsia-600};
+  --fuchsia-700: #{color-defs.$fuchsia-700};
+  --fuchsia-800: #{color-defs.$fuchsia-800};
+  --fuchsia-900: #{color-defs.$fuchsia-900};
+
+  --pink-50: #{color-defs.$pink-50};
+  --pink-100: #{color-defs.$pink-100};
+  --pink-200: #{color-defs.$pink-200};
+  --pink-300: #{color-defs.$pink-300};
+  --pink-400: #{color-defs.$pink-400};
+  --pink-500: #{color-defs.$pink-500};
+  --pink-600: #{color-defs.$pink-600};
+  --pink-700: #{color-defs.$pink-700};
+  --pink-800: #{color-defs.$pink-800};
+  --pink-900: #{color-defs.$pink-900};
+
+  --rose-50: #{color-defs.$rose-50};
+  --rose-100: #{color-defs.$rose-100};
+  --rose-200: #{color-defs.$rose-200};
+  --rose-300: #{color-defs.$rose-300};
+  --rose-400: #{color-defs.$rose-400};
+  --rose-500: #{color-defs.$rose-500};
+  --rose-600: #{color-defs.$rose-600};
+  --rose-700: #{color-defs.$rose-700};
+  --rose-800: #{color-defs.$rose-800};
+  --rose-900: #{color-defs.$rose-900};
+}
