@@ -6,7 +6,7 @@ It should be used together with `modern-normalize.css`.
 
 ## Installation
 
-`npm i modern-normalize https://github.com/ChrisCrossCrash/ck-css.git#v1.0.0`
+`npm i modern-normalize @chris-cross-crash/ck-css`
 
 Then import it where you import your other css files:
 
