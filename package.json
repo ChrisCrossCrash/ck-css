@@ -1,7 +1,8 @@
 {
-  "name": "ck-css",
-  "version": "1.2.1",
+  "name": "@chris-cross-crash/ck-css",
+  "version": "2.0.0",
   "description": "A few opinionated styles that I like to use in every one of my projects",
+  "homepage": "https://github.com/ChrisCrossCrash/ck-css",
   "repository": {
     "type": "git",
     "url": "https://github.com/ChrisCrossCrash/ck-css.git"
@@ -22,7 +23,7 @@
     "minify": "css-minify -d . -o ."
   },
   "author": "Chris Kumm <chrislkumm@protonmail.com> (https://www.chriskumm.com)",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "devDependencies": {
     "css-minify": "^2.0.0",
     "sass": "^1.43.4"
