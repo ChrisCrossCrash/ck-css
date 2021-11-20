@@ -12,7 +12,7 @@ Then import it where you import your other css files:
 
 ```javascript
 import 'modern-normalize'
-import 'ck-css'
+import '@chris-cross-crash/ck-css'
 ```
 
 ### `colors` CSS Custom Properties
@@ -21,7 +21,7 @@ You can also import a nice set of colors from this package:
 
 ```javascript
 // Import the custom properties before your global styles.
-import 'ck-css/colors.css'
+import '@chris-cross-crash/ck-css/colors.css'
 import '../styles/globals.css'
 ```
 
