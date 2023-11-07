@@ -36,11 +36,30 @@ Proposed fix for `tailwindcss` and `modern-normalize`:
     outline-style: auto;
 }
 
-/* Get the correct aspect ratio for images based on width and height HTML attributes */
-/* https://developer.mozilla.org/en-US/docs/Web/Media/images/aspect_ratio_mapping */
+/* Several ideas here are from Keven Powell on YouTube.
+    https://www.youtube.com/watch?v=345V2MU3E_w */
 img, video {
-    /*noinspection CssInvalidPropertyValue*/
-    aspect-ratio: attr(width) / attr(height);
+  max-width: 100%;
+
+  /* This will remove the small amount of space below images (from descending
+     characters). It achieve the desired result of removing space below images
+     without converting them to `display: block;` */
+  vertical-align: middle;
+
+  /* Get the correct aspect ratio for images based on width and height HTML attributes. */
+  height: auto;
+
+  /* If the image does not load, give the alt text in italic. */
+  font-style: italic;
+
+  /* This allows you to add a low-res placeholder image with:
+     background-image: url(/lowres-image.jpg) or a data URI.
+     
+     You could also preload the low-res image with something like this in the
+     <head> of the page:
+     <link rel=preload as=image href='/lowres-image.jpg' fetchpriority=high> */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Remove the default styling from unordered lists. */
