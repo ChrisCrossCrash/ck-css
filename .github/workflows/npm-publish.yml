@@ -18,6 +18,7 @@ jobs:
       - run: npm ci
       # There currently are no tests.
       #- run: npm test
+      - run: npm run minify
 
   publish-npm:
     needs: build
